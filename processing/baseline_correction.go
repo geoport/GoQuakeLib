@@ -37,8 +37,6 @@ import (
 //
 // The function is part of a larger program or package focused on signal processing or data analysis tasks,
 // and it provides a convenient way to perform baseline correction on signals before further analysis or processing.
-//
-// For more information on baseline correction techniques and polynomial fitting, refer to relevant literature and resources.
 func BaselineCorrection(signal []float64, time []float64, order int) (error, []float64) {
 	if len(signal) != len(time) {
 		return errors.New("Signal and time vectors must be of equal length"), nil
